@@ -1,0 +1,55 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/intro">Societe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+             
+              <a class="nav-link active" aria-current="page" routerLink="/intro"> home</a>
+            </li>
+            <li class="nav-item">
+             
+              <a class="nav-link active" aria-current="page" routerLink="/about"> about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/post">Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">contact</a>
+            </li>
+         
+            <div class="navbar-nav ms-auto">
+              <a routerLink="/login" class="nav-item nav-link">Login</a>
+          </div>
+          <div class="navbar-nav ms-auto">
+            <ion-button expand="full" (click)="logout()">Logout</ion-button>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+  
+  
+</ion-content>

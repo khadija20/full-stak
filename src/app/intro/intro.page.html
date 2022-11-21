@@ -1,0 +1,66 @@
+<ion-header>
+	<ion-toolbar color="primary">
+    
+		<nav class="navbar navbar-expand-lg navbar-light ">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="#">Societe</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+				 
+					<a class="nav-link active" aria-current="page" routerLink="/intro"> home</a>
+				  </li>
+				<li class="nav-item">
+				 
+				  <a class="nav-link active" aria-current="page" routerLink="/about"> about</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" routerLink="/post">Post</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" routerLink="/contact">contact</a>
+				</li>
+			 
+				<div class="navbar-nav ms-auto">
+				  <a routerLink="/login" class="nav-item nav-link">Login</a>
+			  </div>
+			  <div class="navbar-nav ms-auto">
+				<ion-button expand="full" (click)="logout()">Logout</ion-button>
+			</div>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-slides pager="true">
+		<!-- Slide 1 -->
+		<ion-slide>
+			<ion-text color="light">
+				<img
+					src="/img/blog/wp-img/ionicacademy.com-wp-content-uploads-2019-10-async-code-course.webp"
+				/>
+				<h1>Hey there!</h1>
+				<p>This is an epic app because...</p>
+				<ion-button (click)="next()" fill="outline" color="light">Next</ion-button>
+			</ion-text>
+		</ion-slide>
+
+		<!-- Slide 2 -->
+		<ion-slide>
+			<ion-text color="light">
+				<img
+					src="/img/blog/wp-img/ionicacademy.com-wp-content-uploads-2020-06-ionic-everywhere-course.webp"
+				/>
+				<h1>It's Ionic!</h1>
+				<p>... it shows all the basics you need!</p>
+				<ion-button (click)="start()" fill="outline" color="light">me post</ion-button>
+			</ion-text>
+		</ion-slide>
+	</ion-slides>
+</ion-content>
